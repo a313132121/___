@@ -66,10 +66,15 @@ def test_all_latency(   #latency：潜伏
             #线程池 https://zhuanlan.zhihu.com/p/65638744 https://www.jianshu.com/p/6d6e4f745c27
             #threadpoolexecutor.map() https://www.cnblogs.com/rainbow-tan/p/17269543.html
             with ThreadPoolExecutor(max_workers) as executor:
+            
+                items = sorted(zip(proxies, executor.map(lambda name: test_latency(name, timeout), proxies)),key=lambda x: (x[1].get('meanDelay') or float('inf'), x[1].get('delay') or float('inf')))
+                return items
+                """
                 return sorted(
                     zip(proxies, executor.map(lambda name: test_latency(name, timeout), proxies)),
                     key=lambda x: (x[1].get('meanDelay') or float('inf'), x[1].get('delay') or float('inf'))
                 )
+                """
                 #sorted() 函数对所有可迭代的对象进行排序操作 https://blog.csdn.net/PY0312/article/details/88956795
                 #zip() 函数用于将可迭代的对象作为参数,
                 #map() 会根据提供的函数对指定序列做映射 https://blog.csdn.net/PY0312/article/details/88956795
@@ -79,5 +84,5 @@ def test_all_latency(   #latency：潜伏
 
 
 if __name__ == '__main__':
-    for item in test_all_latency('https://raw.githubusercontent.com/zsokami/sub/main/trials_providers/All.yaml', timeout=10000):
+    for item in test_all_latency('https://dd.al/trial-All', timeout=10000):
         print(*item)    #*参数，**参数 https://zhuanlan.zhihu.com/p/89304906  https://blog.csdn.net/cadi2011/article/details/84871401
