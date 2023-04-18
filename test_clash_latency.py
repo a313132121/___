@@ -61,8 +61,8 @@ def test_all_latency(   #latency：潜伏
             pass    #pass 语句不执行任何操作。语法上需要一个语句，但程序不实际执行任何动作时，可以使用该语句，或者是当站位语句
         try:
             proxies = requests.get('http://127.0.0.1:9090/proxies').json()['proxies']
+            print(proxies)
             for k in ('DIRECT', 'REJECT', 'GLOBAL'):
-                print(proxies[k])
                 del proxies[k]
             
             #线程池 https://zhuanlan.zhihu.com/p/65638744 https://www.jianshu.com/p/6d6e4f745c27
