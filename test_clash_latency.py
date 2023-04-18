@@ -63,6 +63,7 @@ def test_all_latency(   #latency：潜伏
             proxies = requests.get('http://127.0.0.1:9090/proxies').json()['proxies']
             for k in ('DIRECT', 'REJECT', 'GLOBAL'):
                 del proxies[k]
+            print(proxies)
             #线程池 https://zhuanlan.zhihu.com/p/65638744 https://www.jianshu.com/p/6d6e4f745c27
             #threadpoolexecutor.map() https://www.cnblogs.com/rainbow-tan/p/17269543.html
             with ThreadPoolExecutor(max_workers) as executor:
