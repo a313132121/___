@@ -12,7 +12,7 @@ outfile = 'xxx.yaml'
 
 def write_file(file,content):
     f = open(file, 'w',encoding="UTF-8")
-    f.write(content)
+    f.write(json.dumps(content))
     f.close()
 
 def push(list, outfile):
@@ -113,8 +113,7 @@ def test_all_latency(   #latency：潜伏
                 for i in range(int(len(proxyconfig['proxies']))):
                     executor.submit(test_latency,alive,proxyconfig['proxies'][i])
             #alive=list(alive)
-            print(alive)
-            #write_file(outfile,alive)
+            write_file(outfile,alive)
             #push(alive,outfile)
             return alive
 
