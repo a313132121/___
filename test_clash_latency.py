@@ -53,7 +53,6 @@ def download(url, file, unpack_gzip=False):
 
 
 def test_latency(alive,proxy, timeout=2000):
-    print(proxy)
     try:
         #urllib.parse.quote()   https://blog.csdn.net/weixin_43788986/article/details/125572389
         #quote() 介绍2：https://blog.csdn.net/weixin_43411585/article/details/89067127
@@ -64,8 +63,7 @@ def test_latency(alive,proxy, timeout=2000):
         response = json.loads(r.text)
         print('\n response[delay]'+str(response['delay'])+'\n')
         if response['delay'] > 0:
-            alive.append(proxy)
-            print(proxy)
+            alive['proxies'].append(proxy)
     except Exception as e:
         print(e)
 
@@ -87,7 +85,7 @@ def test_all_latency(   #latency：潜伏
         download(config_url, config_path)#下载config.yaml（实际就是节点文件）
     os.chmod(clash_path, 0o755)#os.chmod() 方法用于更改文件或目录的权限。
     
-    alive = []
+    alive = {'proxies':[]}
     with subprocess.Popen([clash_path, '-f', config_path, '--ext-ctl', ':9090'], stdout=subprocess.PIPE) as popen:
     #subprocess子进程管理 https://zhuanlan.zhihu.com/p/91342640
     #自己推荐看这个 https://www.runoob.com/w3cnote/python3-subprocess.html
