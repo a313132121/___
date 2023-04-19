@@ -15,3 +15,16 @@ jobs:
       run: |
         pip install -r ./requirements.txt
     - run: sudo python test_clash_latency.py
+
+# 提交           
+    - name: 提交更改
+      run: |                 
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git pull origin main
+        git add 1.yaml
+        git commit -m "$(date '+%Y-%m-%d %H:%M:%S') staticsub node update"
+    - name: 推送更改
+      uses:  ad-m/github-push-action@master
+      with:
+        branch: main
