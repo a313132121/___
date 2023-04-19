@@ -8,40 +8,7 @@ from urllib.parse import quote  #https://blog.csdn.net/weixin_43788986/article/d
 import requests #python中requests库使用方法详解 https://zhuanlan.zhihu.com/p/137649301  https://www.runoob.com/python3/python-requests.html
 import yaml
 import json
-outfile = 'xxx.yaml'
-
-def write_file(file,content):
-    f = open(file, 'w',encoding="UTF-8")
-    f.write(yaml.dump(content, default_flow_style=False, sort_keys=False, allow_unicode=True, width=750, indent=2))
-    f.close()
-
-def push(list, outfile):
-
-    clash = {'proxies': [], 'proxy-groups': [
-            {'name': 'automatic', 'type': 'url-test', 'proxies': [], 'url': 'https://www.google.com/favicon.ico',
-             'interval': 300}, {'name': '🌐 Proxy', 'type': 'select', 'proxies': ['automatic']}],
-             'rules': ['MATCH,🌐 Proxy']}
-    if int(len(list)) < 1:
-        print('\n 没有可用节点 \n')
-        return '没有可用节点'
-    clash['proxies'].append(list)
-    """
-    for i in range(int(len(list))):
-        x = list[i]
-        try:
-            float(x['password'])
-        except:
-            try:
-                float(x['uuid'])
-            except:
-                clash['proxies'].append(x)
-                clash['proxy-groups'][0]['proxies'].append(x['name'])
-                clash['proxy-groups'][1]['proxies'].append(x['name'])
-    """
-    with open(outfile, 'w') as writer:
-        yaml.dump(clash, writer, sort_keys=False,default_flow_style=False,encoding='utf-8',allow_unicode=True)
-        writer.close()
-        
+from sub_convert import sub_convert
 def download(url, file, unpack_gzip=False):
     os.makedirs(os.path.normpath(os.path.dirname(file)), exist_ok=True)
     #os.path.dirname(path)功能：去掉文件名，返回目录 ,此处clash_path='/usr/local/bin/clash'，返回'/usr/local/bin/'
@@ -103,18 +70,9 @@ def test_all_latency(   #latency：潜伏
         while b':9090' not in popen.stdout.readline():#为了停止popen.stdout.readline()吗？
             pass    #pass 语句不执行任何操作。语法上需要一个语句，但程序不实际执行任何动作时，可以使用该语句，或者是当站位语句
         try:
-            proxies = requests.get('http://127.0.0.1:9090/proxies').json()['proxies']
-            for k in ('DIRECT', 'REJECT', 'GLOBAL'):
-                del proxies[k]
-            #线程池 https://zhuanlan.zhihu.com/p/65638744 https://www.jianshu.com/p/6d6e4f745c27
-            #threadpoolexecutor.map() https://www.cnblogs.com/rainbow-tan/p/17269543.html
             with ThreadPoolExecutor(max_workers) as executor:
-                
                 for i in range(int(len(proxyconfig['proxies']))):
                     executor.submit(test_latency,alive,proxyconfig['proxies'][i])
-            #alive=list(alive)
-            write_file(outfile,alive)
-            #push(alive,outfile)
             return alive
 
                 #sorted() 函数对所有可迭代的对象进行排序操作 https://blog.csdn.net/PY0312/article/details/88956795
@@ -126,6 +84,12 @@ def test_all_latency(   #latency：潜伏
 
 
 if __name__ == '__main__':
-    test_all_latency('https://raw.githubusercontent.com/zsokami/sub/main/trials_providers/All.yaml', timeout=10000)
+    alive = test_all_latency('https://raw.githubusercontent.com/zsokami/sub/main/trials_providers/All.yaml', timeout=10000)
+    
+    f = open('xxx.yaml', 'w',encoding="UTF-8")
+    f.write(yaml.dump(alive, default_flow_style=False, sort_keys=False, allow_unicode=True, width=750, indent=2))
+    f.close()
+    content = sub_convert.makeup(alive, dup_rm_enabled=True, format_name_enabled=False)
+    print(content)
     #for item in test_all_latency('https://raw.githubusercontent.com/zsokami/sub/main/trials_providers/All.yaml', timeout=10000):
         #print(*item)    #*参数，**参数 https://zhuanlan.zhihu.com/p/89304906  https://blog.csdn.net/cadi2011/article/details/84871401
