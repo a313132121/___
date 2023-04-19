@@ -9,5 +9,9 @@ jobs:
     - uses: actions/setup-python@v4
       with:
         python-version: "3.10"
-    - run: pip install requests tqdm
+    - run: pip install requests
+    # 安装依赖和工具
+    - name: 安装依赖
+      run: |
+        pip install -r ./requirements.txt
     - run: sudo python test_clash_latency.py
