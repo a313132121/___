@@ -79,6 +79,8 @@ def test_all_latency(   #latency：潜伏
     if config_url and (config_cover or not os.path.exists(config_path)):
         download(config_url, config_path)#下载config.yaml（实际就是节点文件）
     os.chmod(clash_path, 0o755)#os.chmod() 方法用于更改文件或目录的权限。
+    
+    alive = []
     with subprocess.Popen([clash_path, '-f', config_path, '--ext-ctl', ':9090'], stdout=subprocess.PIPE) as popen:
     #subprocess子进程管理 https://zhuanlan.zhihu.com/p/91342640
     #自己推荐看这个 https://www.runoob.com/w3cnote/python3-subprocess.html
@@ -87,8 +89,7 @@ def test_all_latency(   #latency：潜伏
             try:
                 proxyconfig = yaml.load(reader, Loader=yaml.FullLoader)
             except Exception as err:
-                print(err)
-        print(proxyconfig)        
+                print(err)   
         while b':9090' not in popen.stdout.readline():#为了停止popen.stdout.readline()吗？
             pass    #pass 语句不执行任何操作。语法上需要一个语句，但程序不实际执行任何动作时，可以使用该语句，或者是当站位语句
         try:
@@ -102,6 +103,7 @@ def test_all_latency(   #latency：潜伏
                 for i in range(int(len(proxyconfig['proxies']))):
                     executor.submit(test_latency,args=(alive,proxyconfig['proxies'][i]))
             alive=list(alive)
+            print(alive)
             push(alive,outfile)
             return alive
 
