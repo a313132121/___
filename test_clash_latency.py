@@ -7,7 +7,7 @@ from urllib.parse import quote  #https://blog.csdn.net/weixin_43788986/article/d
 
 import requests #python中requests库使用方法详解 https://zhuanlan.zhihu.com/p/137649301  https://www.runoob.com/python3/python-requests.html
 import yaml
-from tqdm import tqdm
+
 
 def download(url, file, unpack_gzip=False):
     os.makedirs(os.path.normpath(os.path.dirname(file)), exist_ok=True)
