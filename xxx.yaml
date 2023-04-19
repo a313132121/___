@@ -1,740 +1,624 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u51E4\u51F0\u57CE103 - \u5899\u4E86\u4E2A\
-    \u5899"
-  server: pxvip101.qlgq1.pw
-  port: 30443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: pxvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: pxvip101
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u51E4\u51F0\u57CE101 - \u5899\u4E86\u4E2A\
-    \u5899"
-  server: pxvip101.qlgq1.pw
-  port: 10443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: pxvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: pxvip101
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u51E4\u51F0\u57CE102 - \u5899\u4E86\u4E2A\
-    \u5899"
-  server: pxvip101.qlgq1.pw
-  port: 20443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: pxvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: pxvip101
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u7845\u8C37104 - \u5899\u4E86\u4E2A\u5899"
-  server: svvip101.qlgq1.pw
-  port: 40443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: svvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: svvip101
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u7845\u8C37105 - \u5899\u4E86\u4E2A\u5899"
-  server: svvip101.qlgq1.pw
-  port: 50443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: svvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: svvip101
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u7845\u8C37101 - \u5899\u4E86\u4E2A\u5899"
-  server: svvip101.qlgq1.pw
-  port: 10443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: svvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: svvip101
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u7845\u8C37103 - \u5899\u4E86\u4E2A\u5899"
-  server: svvip101.qlgq1.pw
-  port: 30443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: svvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: svvip101
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u7845\u8C37102 - \u5899\u4E86\u4E2A\u5899"
-  server: svvip101.qlgq1.pw
-  port: 20443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: svvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: svvip101
-  udp: true
-- name: "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5170\u514B\u798F101 - \u5899\u4E86\
-    \u4E2A\u5899"
-  server: fkvip101.qlgq1.pw
-  port: 10443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: fkvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: fkvip101
-  udp: true
-- name: "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5170\u514B\u798F102 - \u5899\u4E86\
-    \u4E2A\u5899"
-  server: fkvip101.qlgq1.pw
-  port: 20443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: fkvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: fkvip101
-  udp: true
-- name: "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5170\u514B\u798F105 - \u5899\u4E86\
-    \u4E2A\u5899"
-  server: fkvip101.qlgq1.pw
-  port: 50443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: fkvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: fkvip101
-  udp: true
-- name: "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5170\u514B\u798F104 - \u5899\u4E86\
-    \u4E2A\u5899"
-  server: fkvip101.qlgq1.pw
-  port: 40443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: fkvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: fkvip101
-  udp: true
-- name: "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5170\u514B\u798F103 - \u5899\u4E86\
-    \u4E2A\u5899"
-  server: fkvip101.qlgq1.pw
-  port: 30443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: fkvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: fkvip101
-  udp: true
-- name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD 102 - \u5899\u4E86\u4E2A\u5899"
-  server: ukvip101.qlgq1.pw
-  port: 20443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: ukvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ukvip101
-  udp: true
-- name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD 104 - \u5899\u4E86\u4E2A\u5899"
-  server: ukvip101.qlgq1.pw
-  port: 40443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: ukvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ukvip101
-  udp: true
-- name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD 101 - \u5899\u4E86\u4E2A\u5899"
-  server: ukvip101.qlgq1.pw
-  port: 10443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: ukvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ukvip101
-  udp: true
-- name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD 103 - \u5899\u4E86\u4E2A\u5899"
-  server: ukvip101.qlgq1.pw
-  port: 30443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: ukvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ukvip101
-  udp: true
-- name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD 105 - \u5899\u4E86\u4E2A\u5899"
-  server: ukvip101.qlgq1.pw
-  port: 50443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: ukvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ukvip101
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 \u65E5\u672C 101 - \u5899\u4E86\u4E2A\u5899"
-  server: jpvip102.qlgq1.pw
-  port: 10443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: jpvip102.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: jpvip102
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 \u65E5\u672C 103 - \u5899\u4E86\u4E2A\u5899"
-  server: jpvip102.qlgq1.pw
-  port: 30443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: jpvip102.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: jpvip102
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 \u65E5\u672C 102 - \u5899\u4E86\u4E2A\u5899"
-  server: jpvip102.qlgq1.pw
-  port: 20443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: jpvip102.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: jpvip102
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 \u65E5\u672C 105 - \u5899\u4E86\u4E2A\u5899"
-  server: jpvip102.qlgq1.pw
-  port: 50443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: jpvip102.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: jpvip102
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 \u65E5\u672C 104 - \u5899\u4E86\u4E2A\u5899"
-  server: jpvip102.qlgq1.pw
-  port: 40443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: jpvip102.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: jpvip102
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u76F4\u8FDE2 - \u7231\u732B\u8BBA\u575B"
-  server: us2.netflix6.com
-  port: 443
-  type: vmess
-  uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /hls/us8.m3u8
-    headers:
-      Host: us2.netflix6.com
-  udp: true
-- name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 105 - \u5899\u4E86\u4E2A\u5899"
-  server: sgvip101.qlgq1.pw
-  port: 50443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: sgvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: sgvip101
-  udp: true
-- name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 101 - \u5899\u4E86\u4E2A\u5899"
-  server: sgvip101.qlgq1.pw
-  port: 10443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: sgvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: sgvip101
-  udp: true
-- name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 103 - \u5899\u4E86\u4E2A\u5899"
-  server: sgvip101.qlgq1.pw
-  port: 30443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: sgvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: sgvip101
-  udp: true
-- name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 104 - \u5899\u4E86\u4E2A\u5899"
-  server: sgvip101.qlgq1.pw
-  port: 40443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: sgvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: sgvip101
-  udp: true
-- name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 102 - \u5899\u4E86\u4E2A\u5899"
-  server: sgvip101.qlgq1.pw
-  port: 20443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: sgvip101.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: sgvip101
-  udp: true
-- name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F 103 - \u5899\u4E86\u4E2A\u5899"
-  server: hkvip102.qlgq1.pw
-  port: 30443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: hkvip102.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: hkvip102
-  udp: true
-- name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F 104 - \u5899\u4E86\u4E2A\u5899"
-  server: hkvip102.qlgq1.pw
-  port: 40443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: hkvip102.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: hkvip102
-  udp: true
-- name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F 102 - \u5899\u4E86\u4E2A\u5899"
-  server: hkvip102.qlgq1.pw
-  port: 20443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: hkvip102.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: hkvip102
-  udp: true
-- name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F 101 - \u5899\u4E86\u4E2A\u5899"
-  server: hkvip102.qlgq1.pw
-  port: 10443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: hkvip102.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: hkvip102
-  udp: true
-- name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F 105 - \u5899\u4E86\u4E2A\u5899"
-  server: hkvip102.qlgq1.pw
-  port: 50443
-  type: trojan
-  password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
-  sni: hkvip102.qlgq1.pw
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: hkvip102
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u76F4\u8FDE1 - \u7231\u732B\u8BBA\u575B"
-  server: us1.netflix6.com
-  port: 443
-  type: vmess
-  uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /hls/us8.m3u8
-    headers:
-      Host: us1.netflix6.com
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u76F4\u8FDE3 - \u7231\u732B\u8BBA\u575B"
-  server: us3.netflix6.com
-  port: 31235
-  type: vmess
-  uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /maohk3
-    headers:
-      Host: us3.netflix6.com
-  udp: true
-- name: "\U0001F1F9\U0001F1FC \u53F0\u6E7E \u76F4\u8FDE1 - \u7231\u732B\u8BBA\u575B"
-  server: tw2.594888.xyz
-  port: 31235
-  type: vmess
-  uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /maohk3
-    headers:
-      Host: tw2.594888.xyz
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u76F4\u8FDE4 - \u7231\u732B\u8BBA\u575B"
-  server: us4.netflix6.com
-  port: 31235
-  type: vmess
-  uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /maohk3
-    headers:
-      Host: us4.netflix6.com
-  udp: true
-- name: "\U0001F1F9\U0001F1FC \u53F0\u6E7E \u76F4\u8FDE3 - \u7231\u732B\u8BBA\u575B"
-  server: tw4.594888.xyz
-  port: 31235
-  type: vmess
-  uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /maohk3
-    headers:
-      Host: tw4.594888.xyz
-  udp: true
-- name: "\U0001F1F9\U0001F1FC \u53F0\u6E7E \u76F4\u8FDE2 - \u7231\u732B\u8BBA\u575B"
-  server: tw3.594888.xyz
-  port: 31235
-  type: vmess
-  uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /maohk3
-    headers:
-      Host: tw3.594888.xyz
-  udp: true
-- name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 \u76F4\u8FDE1 - \u7231\u732B\u8BBA\
-    \u575B"
-  server: sg1.netflix6.com
-  port: 443
-  type: vmess
-  uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /hls/us8.m3u8
-    headers:
-      Host: sg1.netflix6.com
-  udp: true
-- name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 \u76F4\u8FDE2 - \u7231\u732B\u8BBA\
-    \u575B"
-  server: sg2.netflix6.com
-  port: 443
-  type: vmess
-  uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /hls/us8.m3u8
-    headers:
-      Host: sg2.netflix6.com
-  udp: true
-- name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F \u76F4\u8FDE1 - \u7231\u732B\u8BBA\u575B"
-  server: hk1.netflix6.com
-  port: 2443
-  type: vmess
-  uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /maohk3
-    headers:
-      Host: hk1.netflix6.com
-  udp: true
-- name: "\U0001F1F5\U0001F1ED \u83F2\u5F8B\u5BBE \u76F4\u8FDE - \u7231\u732B\u8BBA\
-    \u575B"
-  server: ph1.netflix6.com
-  port: 31235
-  type: vmess
-  uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /maohk3
-    headers:
-      Host: ph1.netflix6.com
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD3 - giao\u4E91"
-  server: 46us.ok365.cyou
-  port: 14433
-  type: trojan
-  password: 2f9d6eac-2375-450f-9096-1ece64f737e8
-  sni: 46us.ok365.cyou
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F9\U0001F1FC \u53F0\u6E7E1 - giao\u4E91"
-  server: 0309tw.ljydw.top
-  port: 443
-  type: trojan
-  password: 2f9d6eac-2375-450f-9096-1ece64f737e8
-  sni: 0309tw.ljydw.top
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F3 - giao\u4E91"
-  server: 330sg02.ljydw.top
-  port: 4433
-  type: trojan
-  password: 2f9d6eac-2375-450f-9096-1ece64f737e8
-  sni: 330sg02.ljydw.top
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F5 - giao\u4E91"
-  server: 330hk01.ljydw.top
-  port: 4433
-  type: trojan
-  password: 2f9d6eac-2375-450f-9096-1ece64f737e8
-  sni: 330hk01.ljydw.top
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 \u65E5\u672C - giao\u4E91"
-  server: jp1117.ljydw.top
-  port: 80
-  type: trojan
-  password: 2f9d6eac-2375-450f-9096-1ece64f737e8
-  sni: jp1117.ljydw.top
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F9\U0001F1FC \u53F0\u6E7E2 - giao\u4E91"
-  server: 805tw.ljydw.top
-  port: 443
-  type: trojan
-  password: 2f9d6eac-2375-450f-9096-1ece64f737e8
-  sni: 805tw.ljydw.top
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F9\U0001F1FC \u53F0\u6E7E3 - giao\u4E91"
-  server: 625tw.ljydw.top
-  port: 80
-  type: trojan
-  password: 2f9d6eac-2375-450f-9096-1ece64f737e8
-  sni: 625tw.ljydw.top
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F2 - giao\u4E91"
-  server: 316sg02.ljydw.top
-  port: 52229
-  type: trojan
-  password: 2f9d6eac-2375-450f-9096-1ece64f737e8
-  sni: 316sg02.ljydw.top
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F1 - giao\u4E91"
-  server: 316sg01.ljydw.top
-  port: 443
-  type: trojan
-  password: 2f9d6eac-2375-450f-9096-1ece64f737e8
-  sni: 316sg01.ljydw.top
-  skip-cert-verify: true
-  udp: true
+- - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u51E4\u51F0\u57CE101 - \u5899\u4E86\u4E2A\
+      \u5899"
+    server: pxvip101.qlgq1.pw
+    port: 10443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: pxvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: pxvip101
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u51E4\u51F0\u57CE103 - \u5899\u4E86\u4E2A\
+      \u5899"
+    server: pxvip101.qlgq1.pw
+    port: 30443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: pxvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: pxvip101
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u51E4\u51F0\u57CE102 - \u5899\u4E86\u4E2A\
+      \u5899"
+    server: pxvip101.qlgq1.pw
+    port: 20443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: pxvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: pxvip101
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u7845\u8C37102 - \u5899\u4E86\u4E2A\u5899"
+    server: svvip101.qlgq1.pw
+    port: 20443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: svvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: svvip101
+    udp: true
+  - name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD 104 - \u5899\u4E86\u4E2A\u5899"
+    server: ukvip101.qlgq1.pw
+    port: 40443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: ukvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ukvip101
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u7845\u8C37104 - \u5899\u4E86\u4E2A\u5899"
+    server: svvip101.qlgq1.pw
+    port: 40443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: svvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: svvip101
+    udp: true
+  - name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD 103 - \u5899\u4E86\u4E2A\u5899"
+    server: ukvip101.qlgq1.pw
+    port: 30443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: ukvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ukvip101
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u7845\u8C37103 - \u5899\u4E86\u4E2A\u5899"
+    server: svvip101.qlgq1.pw
+    port: 30443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: svvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: svvip101
+    udp: true
+  - name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD 102 - \u5899\u4E86\u4E2A\u5899"
+    server: ukvip101.qlgq1.pw
+    port: 20443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: ukvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ukvip101
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u7845\u8C37101 - \u5899\u4E86\u4E2A\u5899"
+    server: svvip101.qlgq1.pw
+    port: 10443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: svvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: svvip101
+    udp: true
+  - name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD 105 - \u5899\u4E86\u4E2A\u5899"
+    server: ukvip101.qlgq1.pw
+    port: 50443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: ukvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ukvip101
+    udp: true
+  - name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD 101 - \u5899\u4E86\u4E2A\u5899"
+    server: ukvip101.qlgq1.pw
+    port: 10443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: ukvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ukvip101
+    udp: true
+  - name: "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5170\u514B\u798F104 - \u5899\u4E86\
+      \u4E2A\u5899"
+    server: fkvip101.qlgq1.pw
+    port: 40443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: fkvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: fkvip101
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u7845\u8C37105 - \u5899\u4E86\u4E2A\u5899"
+    server: svvip101.qlgq1.pw
+    port: 50443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: svvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: svvip101
+    udp: true
+  - name: "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5170\u514B\u798F102 - \u5899\u4E86\
+      \u4E2A\u5899"
+    server: fkvip101.qlgq1.pw
+    port: 20443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: fkvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: fkvip101
+    udp: true
+  - name: "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5170\u514B\u798F105 - \u5899\u4E86\
+      \u4E2A\u5899"
+    server: fkvip101.qlgq1.pw
+    port: 50443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: fkvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: fkvip101
+    udp: true
+  - name: "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5170\u514B\u798F103 - \u5899\u4E86\
+      \u4E2A\u5899"
+    server: fkvip101.qlgq1.pw
+    port: 30443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: fkvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: fkvip101
+    udp: true
+  - name: "\U0001F1EF\U0001F1F5 \u65E5\u672C 101 - \u5899\u4E86\u4E2A\u5899"
+    server: jpvip102.qlgq1.pw
+    port: 10443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: jpvip102.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: jpvip102
+    udp: true
+  - name: "\U0001F1EF\U0001F1F5 \u65E5\u672C 105 - \u5899\u4E86\u4E2A\u5899"
+    server: jpvip102.qlgq1.pw
+    port: 50443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: jpvip102.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: jpvip102
+    udp: true
+  - name: "\U0001F1EF\U0001F1F5 \u65E5\u672C 103 - \u5899\u4E86\u4E2A\u5899"
+    server: jpvip102.qlgq1.pw
+    port: 30443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: jpvip102.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: jpvip102
+    udp: true
+  - name: "\U0001F1EF\U0001F1F5 \u65E5\u672C 102 - \u5899\u4E86\u4E2A\u5899"
+    server: jpvip102.qlgq1.pw
+    port: 20443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: jpvip102.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: jpvip102
+    udp: true
+  - name: "\U0001F1EF\U0001F1F5 \u65E5\u672C 104 - \u5899\u4E86\u4E2A\u5899"
+    server: jpvip102.qlgq1.pw
+    port: 40443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: jpvip102.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: jpvip102
+    udp: true
+  - name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F 101 - \u5899\u4E86\u4E2A\u5899"
+    server: hkvip102.qlgq1.pw
+    port: 10443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: hkvip102.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: hkvip102
+    udp: true
+  - name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 102 - \u5899\u4E86\u4E2A\u5899"
+    server: sgvip101.qlgq1.pw
+    port: 20443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: sgvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: sgvip101
+    udp: true
+  - name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 101 - \u5899\u4E86\u4E2A\u5899"
+    server: sgvip101.qlgq1.pw
+    port: 10443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: sgvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: sgvip101
+    udp: true
+  - name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 105 - \u5899\u4E86\u4E2A\u5899"
+    server: sgvip101.qlgq1.pw
+    port: 50443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: sgvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: sgvip101
+    udp: true
+  - name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 103 - \u5899\u4E86\u4E2A\u5899"
+    server: sgvip101.qlgq1.pw
+    port: 30443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: sgvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: sgvip101
+    udp: true
+  - name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 104 - \u5899\u4E86\u4E2A\u5899"
+    server: sgvip101.qlgq1.pw
+    port: 40443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: sgvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: sgvip101
+    udp: true
+  - name: "\U0001F1F9\U0001F1FC \u53F0\u6E7E \u76F4\u8FDE2 - \u7231\u732B\u8BBA\u575B"
+    server: tw3.594888.xyz
+    port: 31235
+    type: vmess
+    uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /maohk3
+      headers:
+        Host: tw3.594888.xyz
+    udp: true
+  - name: "\U0001F1F9\U0001F1FC \u53F0\u6E7E \u76F4\u8FDE1 - \u7231\u732B\u8BBA\u575B"
+    server: tw2.594888.xyz
+    port: 31235
+    type: vmess
+    uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /maohk3
+      headers:
+        Host: tw2.594888.xyz
+    udp: true
+  - name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F 104 - \u5899\u4E86\u4E2A\u5899"
+    server: hkvip102.qlgq1.pw
+    port: 40443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: hkvip102.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: hkvip102
+    udp: true
+  - name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F 103 - \u5899\u4E86\u4E2A\u5899"
+    server: hkvip102.qlgq1.pw
+    port: 30443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: hkvip102.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: hkvip102
+    udp: true
+  - name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F 105 - \u5899\u4E86\u4E2A\u5899"
+    server: hkvip102.qlgq1.pw
+    port: 50443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: hkvip102.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: hkvip102
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u76F4\u8FDE1 - \u7231\u732B\u8BBA\u575B"
+    server: us1.netflix6.com
+    port: 443
+    type: vmess
+    uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /hls/us8.m3u8
+      headers:
+        Host: us1.netflix6.com
+    udp: true
+  - name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F 102 - \u5899\u4E86\u4E2A\u5899"
+    server: hkvip102.qlgq1.pw
+    port: 20443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: hkvip102.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: hkvip102
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u76F4\u8FDE2 - \u7231\u732B\u8BBA\u575B"
+    server: us2.netflix6.com
+    port: 443
+    type: vmess
+    uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /hls/us8.m3u8
+      headers:
+        Host: us2.netflix6.com
+    udp: true
+  - name: "\U0001F1F9\U0001F1FC \u53F0\u6E7E \u76F4\u8FDE3 - \u7231\u732B\u8BBA\u575B"
+    server: tw4.594888.xyz
+    port: 31235
+    type: vmess
+    uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /maohk3
+      headers:
+        Host: tw4.594888.xyz
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u76F4\u8FDE3 - \u7231\u732B\u8BBA\u575B"
+    server: us3.netflix6.com
+    port: 31235
+    type: vmess
+    uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /maohk3
+      headers:
+        Host: us3.netflix6.com
+    udp: true
+  - name: "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5170\u514B\u798F101 - \u5899\u4E86\
+      \u4E2A\u5899"
+    server: fkvip101.qlgq1.pw
+    port: 10443
+    type: trojan
+    password: 6aaae44b-7ebb-39e4-925c-e8121cc70c5d
+    sni: fkvip101.qlgq1.pw
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: fkvip101
+    udp: true
+  - name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 \u76F4\u8FDE2 - \u7231\u732B\u8BBA\
+      \u575B"
+    server: sg2.netflix6.com
+    port: 443
+    type: vmess
+    uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /hls/us8.m3u8
+      headers:
+        Host: sg2.netflix6.com
+    udp: true
+  - name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 \u76F4\u8FDE1 - \u7231\u732B\u8BBA\
+      \u575B"
+    server: sg1.netflix6.com
+    port: 443
+    type: vmess
+    uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /hls/us8.m3u8
+      headers:
+        Host: sg1.netflix6.com
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u76F4\u8FDE4 - \u7231\u732B\u8BBA\u575B"
+    server: us4.netflix6.com
+    port: 31235
+    type: vmess
+    uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /maohk3
+      headers:
+        Host: us4.netflix6.com
+    udp: true
+  - name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F \u76F4\u8FDE1 - \u7231\u732B\u8BBA\u575B"
+    server: hk1.netflix6.com
+    port: 2443
+    type: vmess
+    uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /maohk3
+      headers:
+        Host: hk1.netflix6.com
+    udp: true
+  - name: "\U0001F1F5\U0001F1ED \u83F2\u5F8B\u5BBE \u76F4\u8FDE - \u7231\u732B\u8BBA\
+      \u575B"
+    server: ph1.netflix6.com
+    port: 31235
+    type: vmess
+    uuid: 83e91f69-15aa-3ab9-8a5a-26c4cd0d0eeb
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /maohk3
+      headers:
+        Host: ph1.netflix6.com
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD3 - giao\u4E91"
+    server: 46us.ok365.cyou
+    port: 14433
+    type: trojan
+    password: 2f9d6eac-2375-450f-9096-1ece64f737e8
+    sni: 46us.ok365.cyou
+    skip-cert-verify: true
+    udp: true
+  - name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F3 - giao\u4E91"
+    server: 330sg02.ljydw.top
+    port: 4433
+    type: trojan
+    password: 2f9d6eac-2375-450f-9096-1ece64f737e8
+    sni: 330sg02.ljydw.top
+    skip-cert-verify: true
+    udp: true
+  - name: "\U0001F1F9\U0001F1FC \u53F0\u6E7E1 - giao\u4E91"
+    server: 0309tw.ljydw.top
+    port: 443
+    type: trojan
+    password: 2f9d6eac-2375-450f-9096-1ece64f737e8
+    sni: 0309tw.ljydw.top
+    skip-cert-verify: true
+    udp: true
+  - name: "\U0001F1F9\U0001F1FC \u53F0\u6E7E2 - giao\u4E91"
+    server: 805tw.ljydw.top
+    port: 443
+    type: trojan
+    password: 2f9d6eac-2375-450f-9096-1ece64f737e8
+    sni: 805tw.ljydw.top
+    skip-cert-verify: true
+    udp: true
+  - name: "\U0001F1EF\U0001F1F5 \u65E5\u672C - giao\u4E91"
+    server: jp1117.ljydw.top
+    port: 80
+    type: trojan
+    password: 2f9d6eac-2375-450f-9096-1ece64f737e8
+    sni: jp1117.ljydw.top
+    skip-cert-verify: true
+    udp: true
+  - name: "\U0001F1F9\U0001F1FC \u53F0\u6E7E3 - giao\u4E91"
+    server: 625tw.ljydw.top
+    port: 80
+    type: trojan
+    password: 2f9d6eac-2375-450f-9096-1ece64f737e8
+    sni: 625tw.ljydw.top
+    skip-cert-verify: true
+    udp: true
+  - name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F5 - giao\u4E91"
+    server: 330hk01.ljydw.top
+    port: 4433
+    type: trojan
+    password: 2f9d6eac-2375-450f-9096-1ece64f737e8
+    sni: 330hk01.ljydw.top
+    skip-cert-verify: true
+    udp: true
+  - name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F1 - giao\u4E91"
+    server: 316sg01.ljydw.top
+    port: 443
+    type: trojan
+    password: 2f9d6eac-2375-450f-9096-1ece64f737e8
+    sni: 316sg01.ljydw.top
+    skip-cert-verify: true
+    udp: true
+  - name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F2 - giao\u4E91"
+    server: 316sg02.ljydw.top
+    port: 52229
+    type: trojan
+    password: 2f9d6eac-2375-450f-9096-1ece64f737e8
+    sni: 316sg02.ljydw.top
+    skip-cert-verify: true
+    udp: true
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies:
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u51E4\u51F0\u57CE103 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u51E4\u51F0\u57CE101 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u51E4\u51F0\u57CE102 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u7845\u8C37104 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u7845\u8C37105 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u7845\u8C37101 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u7845\u8C37103 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u7845\u8C37102 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5170\u514B\u798F101 - \u5899\u4E86\u4E2A\
-    \u5899"
-  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5170\u514B\u798F102 - \u5899\u4E86\u4E2A\
-    \u5899"
-  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5170\u514B\u798F105 - \u5899\u4E86\u4E2A\
-    \u5899"
-  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5170\u514B\u798F104 - \u5899\u4E86\u4E2A\
-    \u5899"
-  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5170\u514B\u798F103 - \u5899\u4E86\u4E2A\
-    \u5899"
-  - "\U0001F1EC\U0001F1E7 \u82F1\u56FD 102 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1EC\U0001F1E7 \u82F1\u56FD 104 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1EC\U0001F1E7 \u82F1\u56FD 101 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1EC\U0001F1E7 \u82F1\u56FD 103 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1EC\U0001F1E7 \u82F1\u56FD 105 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1EF\U0001F1F5 \u65E5\u672C 101 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1EF\U0001F1F5 \u65E5\u672C 103 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1EF\U0001F1F5 \u65E5\u672C 102 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1EF\U0001F1F5 \u65E5\u672C 105 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1EF\U0001F1F5 \u65E5\u672C 104 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u76F4\u8FDE2 - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 105 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 101 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 103 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 104 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 102 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F 103 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F 104 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F 102 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F 101 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F 105 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u76F4\u8FDE1 - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u76F4\u8FDE3 - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E \u76F4\u8FDE1 - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u76F4\u8FDE4 - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E \u76F4\u8FDE3 - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E \u76F4\u8FDE2 - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 \u76F4\u8FDE1 - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 \u76F4\u8FDE2 - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F \u76F4\u8FDE1 - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1F5\U0001F1ED \u83F2\u5F8B\u5BBE \u76F4\u8FDE - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD3 - giao\u4E91"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E1 - giao\u4E91"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F3 - giao\u4E91"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F5 - giao\u4E91"
-  - "\U0001F1EF\U0001F1F5 \u65E5\u672C - giao\u4E91"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E2 - giao\u4E91"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E3 - giao\u4E91"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F2 - giao\u4E91"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F1 - giao\u4E91"
+  proxies: []
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u51E4\u51F0\u57CE103 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u51E4\u51F0\u57CE101 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u51E4\u51F0\u57CE102 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u7845\u8C37104 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u7845\u8C37105 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u7845\u8C37101 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u7845\u8C37103 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u7845\u8C37102 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5170\u514B\u798F101 - \u5899\u4E86\u4E2A\
-    \u5899"
-  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5170\u514B\u798F102 - \u5899\u4E86\u4E2A\
-    \u5899"
-  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5170\u514B\u798F105 - \u5899\u4E86\u4E2A\
-    \u5899"
-  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5170\u514B\u798F104 - \u5899\u4E86\u4E2A\
-    \u5899"
-  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5170\u514B\u798F103 - \u5899\u4E86\u4E2A\
-    \u5899"
-  - "\U0001F1EC\U0001F1E7 \u82F1\u56FD 102 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1EC\U0001F1E7 \u82F1\u56FD 104 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1EC\U0001F1E7 \u82F1\u56FD 101 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1EC\U0001F1E7 \u82F1\u56FD 103 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1EC\U0001F1E7 \u82F1\u56FD 105 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1EF\U0001F1F5 \u65E5\u672C 101 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1EF\U0001F1F5 \u65E5\u672C 103 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1EF\U0001F1F5 \u65E5\u672C 102 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1EF\U0001F1F5 \u65E5\u672C 105 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1EF\U0001F1F5 \u65E5\u672C 104 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u76F4\u8FDE2 - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 105 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 101 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 103 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 104 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 102 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F 103 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F 104 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F 102 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F 101 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F 105 - \u5899\u4E86\u4E2A\u5899"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u76F4\u8FDE1 - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u76F4\u8FDE3 - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E \u76F4\u8FDE1 - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u76F4\u8FDE4 - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E \u76F4\u8FDE3 - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E \u76F4\u8FDE2 - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 \u76F4\u8FDE1 - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 \u76F4\u8FDE2 - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F \u76F4\u8FDE1 - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1F5\U0001F1ED \u83F2\u5F8B\u5BBE \u76F4\u8FDE - \u7231\u732B\u8BBA\u575B"
-  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD3 - giao\u4E91"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E1 - giao\u4E91"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F3 - giao\u4E91"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F5 - giao\u4E91"
-  - "\U0001F1EF\U0001F1F5 \u65E5\u672C - giao\u4E91"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E2 - giao\u4E91"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E3 - giao\u4E91"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F2 - giao\u4E91"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F1 - giao\u4E91"
 rules:
 - "MATCH,\U0001F310 Proxy"
