@@ -33,7 +33,7 @@ def push(list, outfile):
                 clash['proxy-groups'][1]['proxies'].append(x['name'])
     """
     with open(outfile, 'w') as writer:
-        yaml.dump(clash, writer, sort_keys=False)
+        yaml.dump(clash, writer, sort_keys=False,,default_flow_style=False,encoding='utf-8',allow_unicode=True)
         writer.close()
         
 def download(url, file, unpack_gzip=False):
