@@ -76,7 +76,8 @@ def test_all_latency(   #latency：潜伏
             #threadpoolexecutor.map() https://www.cnblogs.com/rainbow-tan/p/17269543.html
             with ThreadPoolExecutor(max_workers) as executor:
                 
-                for i in tqdm(range(int(len(proxyconfig['proxies']))), desc="Testing"):
+                #for i in tqdm(range(int(len(proxyconfig['proxies']))), desc="Testing"):
+                for i in range(int(len(proxyconfig['proxies']))):
                     executor.submit(test_latency,args=(alive,proxyconfig['proxies'][i]))
             alive=list(alive)
             print(alive)
