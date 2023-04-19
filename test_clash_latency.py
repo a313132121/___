@@ -89,7 +89,7 @@ if __name__ == '__main__':
     f = open('xxx.yaml', 'w',encoding="UTF-8")
     f.write(yaml.dump(alive, default_flow_style=False, sort_keys=False, allow_unicode=True, width=750, indent=2))
     f.close()
-    content = sub_convert.makeup(alive, dup_rm_enabled=True, format_name_enabled=False)
+    content = sub_convert.makeup(alive, dup_rm_enabled=False, format_name_enabled=False)
     print(content)
     #for item in test_all_latency('https://raw.githubusercontent.com/zsokami/sub/main/trials_providers/All.yaml', timeout=10000):
         #print(*item)    #*参数，**参数 https://zhuanlan.zhihu.com/p/89304906  https://blog.csdn.net/cadi2011/article/details/84871401
