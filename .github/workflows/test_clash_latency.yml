@@ -9,21 +9,8 @@ jobs:
     - uses: actions/setup-python@v4
       with:
         python-version: "3.10"
-    #- run: pip install requests
-    # 安装依赖和工具
-    - name: 安装依赖
-      run: |
-        pip install -r ./requirements.txt
-    - name: 安装Country.mmdb - ip库
-      run: |        
-        wget -O Country.mmdb https://github.com/Dreamacro/maxmind-geoip/releases/latest/download/Country.mmdb
-    - name: 安装订阅转换工具-subconverter
-      run: |
-        wget -O subconverter.tar.gz https://github.com/tindy2013/subconverter/releases/latest/download/subconverter_linux64.tar.gz
-        tar -zxvf subconverter.tar.gz -C ./
-        chmod +x ./subconverter/subconverter && nohup ./subconverter/subconverter >./subconverter.log 2>&1 &
+    - run: pip install requests
     - run: sudo python test_clash_latency.py
-
 # 提交           
     - name: 提交更改
       run: |                 
