@@ -57,11 +57,11 @@ def test_all_latency(   #latency：潜伏
     #subprocess子进程管理 https://zhuanlan.zhihu.com/p/91342640
     #自己推荐看这个 https://www.runoob.com/w3cnote/python3-subprocess.html
     #https://blog.csdn.net/weixin_45314192/article/details/123310026
-	with open(config_path, 'r') as reader:
-            try:
-                proxyconfig = yaml.load(reader, Loader=yaml.FullLoader)
-            except Exception as err:
-                print(err)
+		with open(config_path, 'r') as reader:
+			try:
+				proxyconfig = yaml.load(reader, Loader=yaml.FullLoader)
+			except Exception as err:
+				print(err)
         print(proxyconfig)        
         while b':9090' not in popen.stdout.readline():#为了停止popen.stdout.readline()吗？
             pass    #pass 语句不执行任何操作。语法上需要一个语句，但程序不实际执行任何动作时，可以使用该语句，或者是当站位语句
