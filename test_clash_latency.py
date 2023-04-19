@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import gzip         #https://www.cnblogs.com/eliwang/p/14591861.html
 import os
 import shutil   #主要：拷贝文件https://blog.csdn.net/weixin_41261833/article/details/108050152
