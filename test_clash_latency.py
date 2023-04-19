@@ -6,7 +6,7 @@ from concurrent.futures import ThreadPoolExecutor   #线程池 https://zhuanlan.
 from urllib.parse import quote  #https://blog.csdn.net/weixin_43788986/article/details/125572389
 
 import requests #python中requests库使用方法详解 https://zhuanlan.zhihu.com/p/137649301  https://www.runoob.com/python3/python-requests.html
-
+import yaml
 
 def download(url, file, unpack_gzip=False):
     os.makedirs(os.path.normpath(os.path.dirname(file)), exist_ok=True)
@@ -57,7 +57,7 @@ def test_all_latency(   #latency：潜伏
     #subprocess子进程管理 https://zhuanlan.zhihu.com/p/91342640
     #自己推荐看这个 https://www.runoob.com/w3cnote/python3-subprocess.html
     #https://blog.csdn.net/weixin_45314192/article/details/123310026
-		with open(config_path, 'r') as reader:
+	with open(config_path, 'r') as reader:
             try:
                 proxyconfig = yaml.load(reader, Loader=yaml.FullLoader)
             except Exception as err:
