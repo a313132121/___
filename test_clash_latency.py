@@ -18,7 +18,8 @@ def push(list, outfile):
     if int(len(list)) < 1:
         print('\n 没有可用节点 \n')
         return '没有可用节点'
-
+    clash['proxies'].append(list)
+    """
     for i in range(int(len(list))):
         x = list[i]
         try:
@@ -30,6 +31,7 @@ def push(list, outfile):
                 clash['proxies'].append(x)
                 clash['proxy-groups'][0]['proxies'].append(x['name'])
                 clash['proxy-groups'][1]['proxies'].append(x['name'])
+    """
     with open(outfile, 'w') as writer:
         yaml.dump(clash, writer, sort_keys=False)
         writer.close()
