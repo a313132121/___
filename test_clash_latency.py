@@ -24,17 +24,19 @@ def download(url, file, unpack_gzip=False):
         shutil.copyfileobj(_in, _out)   #拷贝文件https://zhuanlan.zhihu.com/p/213919757 和 https://www.cnblogs.com/xiangsikai/p/7787101.html
 
 
-def test_latency(name, timeout=2000):
+def test_latency(alive,proxy, timeout=2000):
     try:
         #urllib.parse.quote()   https://blog.csdn.net/weixin_43788986/article/details/125572389
         #quote() 介绍2：https://blog.csdn.net/weixin_43411585/article/details/89067127
-        r = requests.get(f"http://127.0.0.1:9090/proxies/{quote(name, safe='')}/delay", params={
+        r = requests.get(f"http://127.0.0.1:9090/proxies/{quote(proxy['name'], safe='')}/delay", params={
             'url': 'https://i.ytimg.com/generate_204',
             'timeout': timeout
         }, timeout=timeout / 400).json()
+        if r['delay'] > 0:
+            alive.append(proxy)
     except Exception as e:
-        r = {'message': str(e)}
-    return r
+        print(e)
+
 
 
 def test_all_latency(   #latency：潜伏
@@ -52,7 +54,7 @@ def test_all_latency(   #latency：潜伏
     if config_url and (config_cover or not os.path.exists(config_path)):
         download(config_url, config_path)#下载config.yaml（实际就是节点文件）
     os.chmod(clash_path, 0o755)#os.chmod() 方法用于更改文件或目录的权限。
-    
+    aargs=(alive,config['proxies'][i],apiurl,sema,timeout,testurl)
     with subprocess.Popen([clash_path, '-f', config_path, '--ext-ctl', ':9090'], stdout=subprocess.PIPE) as popen:
     #subprocess子进程管理 https://zhuanlan.zhihu.com/p/91342640
     #自己推荐看这个 https://www.runoob.com/w3cnote/python3-subprocess.html
@@ -72,10 +74,16 @@ def test_all_latency(   #latency：潜伏
             #线程池 https://zhuanlan.zhihu.com/p/65638744 https://www.jianshu.com/p/6d6e4f745c27
             #threadpoolexecutor.map() https://www.cnblogs.com/rainbow-tan/p/17269543.html
             with ThreadPoolExecutor(max_workers) as executor:
-            
+                
+                for i in tqdm(range(int(len(proxyconfig['proxies']))), desc="Testing"):
+                    executor.submit(test_latency,args=(alive,proxyconfig['proxies'][i]))
+            alive=list(alive)
+            print(alive)
+            return alive
+                """
                 items = sorted(zip(proxies, executor.map(lambda name: test_latency(name, timeout), proxies)),key=lambda x: (x[1].get('meanDelay') or float('inf'), x[1].get('delay') or float('inf')))
                 return items
-                """
+                
                 return sorted(
                     zip(proxies, executor.map(lambda name: test_latency(name, timeout), proxies)),
                     key=lambda x: (x[1].get('meanDelay') or float('inf'), x[1].get('delay') or float('inf'))
@@ -90,5 +98,6 @@ def test_all_latency(   #latency：潜伏
 
 
 if __name__ == '__main__':
-    for item in test_all_latency('https://raw.githubusercontent.com/zsokami/sub/main/trials_providers/All.yaml', timeout=10000):
-        print(*item)    #*参数，**参数 https://zhuanlan.zhihu.com/p/89304906  https://blog.csdn.net/cadi2011/article/details/84871401
+    test_all_latency('https://raw.githubusercontent.com/zsokami/sub/main/trials_providers/All.yaml', timeout=10000)
+    #for item in test_all_latency('https://raw.githubusercontent.com/zsokami/sub/main/trials_providers/All.yaml', timeout=10000):
+        #print(*item)    #*参数，**参数 https://zhuanlan.zhihu.com/p/89304906  https://blog.csdn.net/cadi2011/article/details/84871401
