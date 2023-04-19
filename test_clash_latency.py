@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import gzip         #https://www.cnblogs.com/eliwang/p/14591861.html
 import os
 import shutil   #主要：拷贝文件https://blog.csdn.net/weixin_41261833/article/details/108050152
@@ -9,7 +8,6 @@ from urllib.parse import quote  #https://blog.csdn.net/weixin_43788986/article/d
 import requests #python中requests库使用方法详解 https://zhuanlan.zhihu.com/p/137649301  https://www.runoob.com/python3/python-requests.html
 import yaml
 import json
-from sub_convert import sub_convert
 def download(url, file, unpack_gzip=False):
     os.makedirs(os.path.normpath(os.path.dirname(file)), exist_ok=True)
     #os.path.dirname(path)功能：去掉文件名，返回目录 ,此处clash_path='/usr/local/bin/clash'，返回'/usr/local/bin/'
@@ -85,12 +83,10 @@ def test_all_latency(   #latency：潜伏
 
 
 if __name__ == '__main__':
-    alive = test_all_latency('https://raw.githubusercontent.com/zsokami/sub/main/trials_providers/All.yaml', timeout=10000)
-    
+    alive = test_all_latency('https://raw.githubusercontent.com/rxsweet/proxies/main/sub/sources/staticAll.yaml', timeout=10000)
+    #alive = test_all_latency('https://raw.githubusercontent.com/zsokami/sub/main/trials_providers/All.yaml', timeout=10000)
     f = open('xxx.yaml', 'w',encoding="UTF-8")
     f.write(yaml.dump(alive, default_flow_style=False, sort_keys=False, allow_unicode=True, width=750, indent=2))
     f.close()
-    content = sub_convert.makeup(alive, dup_rm_enabled=False, format_name_enabled=False)
-    print(content)
     #for item in test_all_latency('https://raw.githubusercontent.com/zsokami/sub/main/trials_providers/All.yaml', timeout=10000):
         #print(*item)    #*参数，**参数 https://zhuanlan.zhihu.com/p/89304906  https://blog.csdn.net/cadi2011/article/details/84871401
