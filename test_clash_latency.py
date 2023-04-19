@@ -7,7 +7,7 @@ from urllib.parse import quote  #https://blog.csdn.net/weixin_43788986/article/d
 
 import requests #python中requests库使用方法详解 https://zhuanlan.zhihu.com/p/137649301  https://www.runoob.com/python3/python-requests.html
 import yaml
-outfile = '1.yaml'
+outfile = 'xxx.yaml'
 def push(list, outfile):
 
     clash = {'proxies': [], 'proxy-groups': [
