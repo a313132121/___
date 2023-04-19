@@ -51,6 +51,7 @@ def download(url, file, unpack_gzip=False):
 
 
 def test_latency(alive,proxy, timeout=2000):
+    print(proxy)
     try:
         #urllib.parse.quote()   https://blog.csdn.net/weixin_43788986/article/details/125572389
         #quote() 介绍2：https://blog.csdn.net/weixin_43411585/article/details/89067127
