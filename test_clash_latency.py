@@ -7,8 +7,32 @@ from urllib.parse import quote  #https://blog.csdn.net/weixin_43788986/article/d
 
 import requests #python中requests库使用方法详解 https://zhuanlan.zhihu.com/p/137649301  https://www.runoob.com/python3/python-requests.html
 import yaml
+outfile = '1.yaml'
+def push(list, outfile):
 
+    clash = {'proxies': [], 'proxy-groups': [
+            {'name': 'automatic', 'type': 'url-test', 'proxies': [], 'url': 'https://www.google.com/favicon.ico',
+             'interval': 300}, {'name': '🌐 Proxy', 'type': 'select', 'proxies': ['automatic']}],
+             'rules': ['MATCH,🌐 Proxy']}
+    if int(len(list)) < 1:
+        print('\n 没有可用节点 \n')
+        return '没有可用节点'
 
+    for i in range(int(len(list))):
+        x = list[i]
+        try:
+            float(x['password'])
+        except:
+            try:
+                float(x['uuid'])
+            except:
+                clash['proxies'].append(x)
+                clash['proxy-groups'][0]['proxies'].append(x['name'])
+                clash['proxy-groups'][1]['proxies'].append(x['name'])
+    with open(outfile, 'w') as writer:
+        yaml.dump(clash, writer, sort_keys=False)
+        writer.close()
+        
 def download(url, file, unpack_gzip=False):
     os.makedirs(os.path.normpath(os.path.dirname(file)), exist_ok=True)
     #os.path.dirname(path)功能：去掉文件名，返回目录 ,此处clash_path='/usr/local/bin/clash'，返回'/usr/local/bin/'
@@ -55,7 +79,7 @@ def test_all_latency(   #latency：潜伏
     if config_url and (config_cover or not os.path.exists(config_path)):
         download(config_url, config_path)#下载config.yaml（实际就是节点文件）
     os.chmod(clash_path, 0o755)#os.chmod() 方法用于更改文件或目录的权限。
-
+    aargs=(alive,config['proxies'][i],apiurl,sema,timeout,testurl)
     with subprocess.Popen([clash_path, '-f', config_path, '--ext-ctl', ':9090'], stdout=subprocess.PIPE) as popen:
     #subprocess子进程管理 https://zhuanlan.zhihu.com/p/91342640
     #自己推荐看这个 https://www.runoob.com/w3cnote/python3-subprocess.html
@@ -76,12 +100,20 @@ def test_all_latency(   #latency：潜伏
             #threadpoolexecutor.map() https://www.cnblogs.com/rainbow-tan/p/17269543.html
             with ThreadPoolExecutor(max_workers) as executor:
                 
-                #for i in tqdm(range(int(len(proxyconfig['proxies']))), desc="Testing"):
-                for i in range(int(len(proxyconfig['proxies']))):
+                for i in tqdm(range(int(len(proxyconfig['proxies']))), desc="Testing"):
                     executor.submit(test_latency,args=(alive,proxyconfig['proxies'][i]))
             alive=list(alive)
-            print(alive)
+            push(alive,outfile)
             return alive
+                """
+                items = sorted(zip(proxies, executor.map(lambda name: test_latency(name, timeout), proxies)),key=lambda x: (x[1].get('meanDelay') or float('inf'), x[1].get('delay') or float('inf')))
+                return items
+                
+                return sorted(
+                    zip(proxies, executor.map(lambda name: test_latency(name, timeout), proxies)),
+                    key=lambda x: (x[1].get('meanDelay') or float('inf'), x[1].get('delay') or float('inf'))
+                )
+                """
                 #sorted() 函数对所有可迭代的对象进行排序操作 https://blog.csdn.net/PY0312/article/details/88956795
                 #zip() 函数用于将可迭代的对象作为参数,
                 #map() 会根据提供的函数对指定序列做映射 https://blog.csdn.net/PY0312/article/details/88956795
