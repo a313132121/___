@@ -12,7 +12,7 @@ outfile = 'xxx.yaml'
 
 def write_file(file,content):
     f = open(file, 'w',encoding="UTF-8")
-    f.write(json.dumps(content))
+    f.write(yaml.dump(content, default_flow_style=False, sort_keys=False, allow_unicode=True, width=750, indent=2))
     f.close()
 
 def push(list, outfile):
