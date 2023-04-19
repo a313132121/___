@@ -56,11 +56,12 @@ def test_latency(alive,proxy, timeout=2000):
         r = requests.get(f"http://127.0.0.1:9090/proxies/{quote(proxy['name'], safe='')}/delay", params={
             'url': 'https://i.ytimg.com/generate_204',
             'timeout': timeout
-        }, timeout=timeout / 400).json()
-        print(r)
-        print('\n'+r['delay']+'\n')
-        if r['delay'] > 0:
+        }, timeout=timeout / 400)
+        response = json.loads(r.text)
+        print('\n'+response['delay']+'\n')
+        if response['delay'] > 0:
             alive.append(proxy)
+            print(proxy)
     except Exception as e:
         print(e)
 
