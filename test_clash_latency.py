@@ -104,6 +104,7 @@ def test_all_latency(   #latency：潜伏
                 
                 for i in range(int(len(proxyconfig['proxies']))):
                     executor.submit(test_latency,args=(alive,proxyconfig['proxies'][i]))
+                    print(proxyconfig['proxies'][i])
             alive=list(alive)
             print(alive)
             push(alive,outfile)
