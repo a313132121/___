@@ -9,6 +9,12 @@ import requests #python中requests库使用方法详解 https://zhuanlan.zhihu.c
 import yaml
 import json
 outfile = 'xxx.yaml'
+
+def write_file(file,content):
+    f = open(file, 'w',encoding="UTF-8")
+    f.write(content)
+    f.close()
+
 def push(list, outfile):
 
     clash = {'proxies': [], 'proxy-groups': [
@@ -61,7 +67,6 @@ def test_latency(alive,proxy, timeout=2000):
             'timeout': timeout
         }, timeout=timeout / 400)
         response = json.loads(r.text)
-        print('\n response[delay]'+str(response['delay'])+'\n')
         if response['delay'] > 0:
             alive['proxies'].append(proxy)
     except Exception as e:
@@ -108,8 +113,9 @@ def test_all_latency(   #latency：潜伏
                 for i in range(int(len(proxyconfig['proxies']))):
                     executor.submit(test_latency,alive,proxyconfig['proxies'][i])
             alive=list(alive)
-            print(alive)
-            push(alive,outfile)
+            print(alive['proxies'])
+            write_file(outfile,alive)
+            #push(alive,outfile)
             return alive
 
                 #sorted() 函数对所有可迭代的对象进行排序操作 https://blog.csdn.net/PY0312/article/details/88956795
