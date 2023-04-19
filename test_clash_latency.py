@@ -60,7 +60,7 @@ def test_latency(alive,proxy, timeout=2000):
             'timeout': timeout
         }, timeout=timeout / 400)
         response = json.loads(r.text)
-        print('\n response['delay']'+str(response['delay'])+'\n')
+        print('\n response[delay]'+str(response['delay'])+'\n')
         if response['delay'] > 0:
             alive.append(proxy)
             print(proxy)
