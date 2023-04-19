@@ -34,6 +34,7 @@ def test_latency(name, timeout=2000):
         }, timeout=timeout / 400).json()
     except Exception as e:
         r = {'message': str(e)}
+    print(r)
     return r
 
 
