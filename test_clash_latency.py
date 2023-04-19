@@ -57,7 +57,7 @@ def test_latency(alive,proxy, timeout=2000):
             'url': 'https://i.ytimg.com/generate_204',
             'timeout': timeout
         }, timeout=timeout / 400).json()
-        print(proxy)
+        print(r)
         print('\n'+r['delay']+'\n')
         if r['delay'] > 0:
             alive.append(proxy)
