@@ -10,6 +10,13 @@ from urllib.parse import quote  #https://blog.csdn.net/weixin_43788986/article/d
 import requests #python中requests库使用方法详解 https://zhuanlan.zhihu.com/p/137649301  https://www.runoob.com/python3/python-requests.html
 import yaml
 import json
+
+import time
+from multiprocessing import Process, Manager, Semaphore
+from tqdm import tqdm
+
+
+
 def download(url, file, unpack_gzip=False):
     os.makedirs(os.path.normpath(os.path.dirname(file)), exist_ok=True)
     #os.path.dirname(path)功能：去掉文件名，返回目录 ,此处clash_path='/usr/local/bin/clash'，返回'/usr/local/bin/'
@@ -57,8 +64,28 @@ def test_all_latency(   #latency：潜伏
     if config_url and (config_cover or not os.path.exists(config_path)):
         download(config_url, config_path)#下载config.yaml（实际就是节点文件）
     os.chmod(clash_path, 0o755)#os.chmod() 方法用于更改文件或目录的权限。
-    
+    #读取节点
+    with open(config_path, 'r') as reader:
+        try:
+            proxyconfig = yaml.load(reader, Loader=yaml.FullLoader)
+        except Exception as err:
+            print(err) 
     alive = {'proxies':[]}
+    clash = subprocess.Popen([clash_path, '-f', config_path, '--ext-ctl', ':9090'])
+    processes =[]
+    sema = Semaphore(max_workers)
+    time.sleep(5)
+    for i in tqdm(range(int(len(proxyconfig['proxies']))), desc="Testing"):
+        sema.acquire()
+        p = Process(target=test_latency, args=(alive,proxyconfig['proxies'][i]))
+        p.start()
+        processes.append(p)
+    for p in processes:
+        p.join
+    time.sleep(5)
+    alive = yaml.dump(alive, default_flow_style=False, sort_keys=False, allow_unicode=True, width=750, indent=2)
+    return alive 
+    """
     with subprocess.Popen([clash_path, '-f', config_path, '--ext-ctl', ':9090'], stdout=subprocess.PIPE) as popen:
     #subprocess子进程管理 https://zhuanlan.zhihu.com/p/91342640
     #自己推荐看这个 https://www.runoob.com/w3cnote/python3-subprocess.html
@@ -83,9 +110,9 @@ def test_all_latency(   #latency：潜伏
             popen.terminate()#Popen.terminate()停止子进程
         alive = yaml.dump(alive, default_flow_style=False, sort_keys=False, allow_unicode=True, width=750, indent=2)
         return alive    
-
+    """
 if __name__ == '__main__':
-    alive = test_all_latency('https://raw.githubusercontent.com/rxsweet/proxies/main/sub/sources/dynamicAll.yaml', timeout=10000)
+    alive = test_all_latency('https://raw.githubusercontent.com/rxsweet/proxies/main/sub/sources/staticAll.yaml', timeout=10000)
     #alive = test_all_latency('https://raw.githubusercontent.com/zsokami/sub/main/trials_providers/All.yaml', timeout=10000)
     f = open('xxx.yaml', 'w',encoding="UTF-8")
     f.write(alive)
