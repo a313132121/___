@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import gzip         #https://www.cnblogs.com/eliwang/p/14591861.html
 import os
 import shutil   #主要：拷贝文件https://blog.csdn.net/weixin_41261833/article/details/108050152
@@ -72,7 +74,6 @@ def test_all_latency(   #latency：潜伏
             with ThreadPoolExecutor(max_workers) as executor:
                 for i in range(int(len(proxyconfig['proxies']))):
                     executor.submit(test_latency,alive,proxyconfig['proxies'][i])
-            return alive
 
                 #sorted() 函数对所有可迭代的对象进行排序操作 https://blog.csdn.net/PY0312/article/details/88956795
                 #zip() 函数用于将可迭代的对象作为参数,
@@ -80,13 +81,14 @@ def test_all_latency(   #latency：潜伏
                 #将lambda函数赋值给一个变量，通过这个变量间接调用该lambda函数 https://blog.csdn.net/PY0312/article/details/88956795
         finally:    #无论try语句中是否抛出异常，finally中的语句一定会被执行https://blog.csdn.net/gyniu/article/details/80345160
             popen.terminate()#Popen.terminate()停止子进程
-
+        alive = yaml.dump(alive, default_flow_style=False, sort_keys=False, allow_unicode=True, width=750, indent=2)
+        return alive    
 
 if __name__ == '__main__':
-    alive = test_all_latency('https://raw.githubusercontent.com/rxsweet/proxies/main/sub/sources/staticAll.yaml', timeout=10000)
-    #alive = test_all_latency('https://raw.githubusercontent.com/zsokami/sub/main/trials_providers/All.yaml', timeout=10000)
+    #alive = test_all_latency('https://raw.githubusercontent.com/rxsweet/proxies/main/sub/sources/staticAll.yaml', timeout=10000)
+    alive = test_all_latency('https://raw.githubusercontent.com/zsokami/sub/main/trials_providers/All.yaml', timeout=10000)
     f = open('xxx.yaml', 'w',encoding="UTF-8")
-    f.write(yaml.dump(alive, default_flow_style=False, sort_keys=False, allow_unicode=True, width=750, indent=2))
+    f.write(alive)
     f.close()
     #for item in test_all_latency('https://raw.githubusercontent.com/zsokami/sub/main/trials_providers/All.yaml', timeout=10000):
         #print(*item)    #*参数，**参数 https://zhuanlan.zhihu.com/p/89304906  https://blog.csdn.net/cadi2011/article/details/84871401
