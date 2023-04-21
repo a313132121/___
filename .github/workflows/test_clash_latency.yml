@@ -3,13 +3,31 @@ on:
   workflow_dispatch:
 jobs:
   test_clash_latency:
+
+# 基本系统配置
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
+    - name: 迁出代码
+      uses: actions/checkout@v3
+    - name: 安装Python
+      uses: actions/setup-python@v4
       with:
-        python-version: "3.10"
-    - run: pip install requests
+        python-version: '3.10' 
+    - name: 加载缓存
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/run_in_Actions/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    - name: 设置时区
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+      
+# 安装依赖和工具
+    - name: 安装依赖
+      run: |
+        pip install -r ./utils/requirements.txt
+    #- run: pip install requests
     - run: sudo python test_clash_latency.py
 # 提交           
     - name: 提交更改
